@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 2</title>
+</head>
+<body>
+  <header>
+    <h1>Atividades com switch</h1>
+    <nav>
+      <a href="index.html">Atividade 1</a> |
+      <a href="index2.html">Atividade 2</a> 
+    </nav>
+  </header>
+  <ol>
+    <li>Vermelho</li>
+    <li>Azul</li>
+    <li>Amarelo</li>
+    <li>Verde</li>
+    <li>Rosa</li>
+    <li>Preto</li>
+  </ol>
+  <br>
+  <input type="number" id="index">
+  <button onclick="enviar()">Enviar</button>
+
+  <p id="result"></p>
+
+
+  <script>
+    function enviar(){
+      const index = parseInt(document.getElementById("index").value)
+
+      switch(index){
+        case 1:
+          document.getElementById("result").innerHTML = `Sua cor favorita é o Vermelho`
+          break;
+        case 2:
+          document.getElementById("result").innerHTML = `Sua cor favorita é o Azul`
+          break;
+        case 3:
+          document.getElementById("result").innerHTML = `Sua cor favorita é o Amarelo`
+          break;
+        case 4:
+          document.getElementById("result").innerHTML = `Sua cor favorita é o Verde`
+          break;
+        case 5:
+          document.getElementById("result").innerHTML = `Sua cor favorita é o Rosa`
+          break;
+        case 6:
+          document.getElementById("result").innerHTML = `Sua cor favorita é o Preto`
+          break;
+        default:
+          alert("Input inválido")
+          break
+      }
+    }
+  </script>
+</body>
+</html>
